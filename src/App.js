@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './components/Header/Header';
 
 function App() {
   return (
@@ -6,7 +7,7 @@ function App() {
      <h1> Social App  </h1>
 
 
-    {/* header */}
+    <Header />
 
     {/* app body */}
 
