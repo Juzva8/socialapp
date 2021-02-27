@@ -43,7 +43,6 @@ function Post({ profilePic, image, username, timestamp, message }) {
             <AccountCircleIcon />
             <ExpandMoreOutlined />
             </div>
-
             </div>
         </div>
     )
