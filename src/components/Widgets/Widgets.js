@@ -4,7 +4,9 @@ import './Widgets.css'
 function Widgets() {
     return (
         <div className="widgets">
-            <iframe src="https://cybup.blogspot.com"
+            <iframe 
+            title="Social app" 
+            src="https://cybup.blogspot.com"
             width="340" 
             height="100%" 
             style={{border: "none", overflow: "hidden" }}
