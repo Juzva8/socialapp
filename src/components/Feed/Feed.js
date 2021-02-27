@@ -23,7 +23,6 @@ function Feed() {
             username = "Juzva8"
             image=""
             />
-            <Post />
 
         </div>
     )
