@@ -1,11 +1,13 @@
 import { Avatar } from '@material-ui/core'
-import React from 'react'
+import React, { useState } from 'react'
 import './MessageSender.css'
 import VideocamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 
 function MessageSender() {
+    const[input, setInput] = useState('');
+    
     const handleSubmit = (e) => {
         e.preventDefault();
     };
@@ -16,6 +18,8 @@ function MessageSender() {
                 <Avatar />
                 <form>
                     <input 
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
                     className='messageSender__input' 
                     placeholder={`What is on your server?`} />
                     <input placeholder="image URL (Optional)" />
