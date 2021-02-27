@@ -27,7 +27,7 @@ function MessageSender() {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     className='messageSender__input' 
-                    placeholder={`What is on your server? ${user.displayName}`} />
+                    placeholder={`What is on your server ${user.displayName} ?`} />
                     <input 
                     value={imageUrl}
                     onChange={(e) => setImageUrl(e.target.value)}
