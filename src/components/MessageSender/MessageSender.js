@@ -14,13 +14,15 @@ function MessageSender() {
         <div className="messageSender">
             <div className ="messageSender__top">
                 <Avatar />
-                <from>
-                    <input className='messageSender__input' placeholder={`What is on your server?`} />
+                <form>
+                    <input 
+                    className='messageSender__input' 
+                    placeholder={`What is on your server?`} />
                     <input placeholder="image URL (Optional)" />
                     <button onClick={handleSubmit} type='submit'>
                         Hidden submit
                     </button>
-                </from>
+                </form>
              </div>
             <div className ="messageSender__bottom">
         <div className ="messageSender__option">
