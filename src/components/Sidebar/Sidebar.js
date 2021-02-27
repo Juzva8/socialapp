@@ -8,12 +8,14 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+import { useStateValue } from "../../StateProvider"
 
 
 function Sidebar() {
+    const [{ user }, dispatch] = useStateValue();
     return (
         <div className="sidebar">
-            <SidebarRow src="https://avatars.githubusercontent.com/u/72834046?s=400&u=13200316b9a5b284830062c1c1bf2a347616e043&v=4" title="Lawrence Juzva" />
+            <SidebarRow src={user.photoURL} title={user.displayName} />
             <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center"/>
             <SidebarRow Icon={EmojiFlagsIcon} title='Pages' />
             <SidebarRow Icon={PeopleIcon} title='Friends' />     
