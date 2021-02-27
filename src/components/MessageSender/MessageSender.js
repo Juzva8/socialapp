@@ -7,9 +7,13 @@ import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 
 function MessageSender() {
     const[input, setInput] = useState('');
-    
+    const[imageUrl, setImageUrl] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        setInput("");
+        setImageUrl("");
+
     };
 
     return (
@@ -22,7 +26,10 @@ function MessageSender() {
                     onChange={(e) => setInput(e.target.value)}
                     className='messageSender__input' 
                     placeholder={`What is on your server?`} />
-                    <input placeholder="image URL (Optional)" />
+                    <input 
+                    value={imageUrl}
+                    onChange={(e) => setImageUrl(e.target.value)}
+                    placeholder="image URL (Optional)" />
                     <button onClick={handleSubmit} type='submit'>
                         Hidden submit
                     </button>
