@@ -38,18 +38,18 @@
     justify-content: center;
 }
 .header__option > .MuiSvgIcon-root{
-    color: gray;
+    color: #4b4d4e;
 }
 
 .header__option:hover > .MuiSvgIcon-root{
-    color: #2e81f4;
+    color: #4b4d4e;
 }
 .header__option--active > .MuiSvgIcon-root {
-    color: #2e81f4;
+    color: #4b4d4e;
 }
 
 .header__option--active{
-    border-bottom: 4px solid #2e81f4;
+    border-bottom: 4px solid #4b4d4e;
 }
 
 .header__option{
