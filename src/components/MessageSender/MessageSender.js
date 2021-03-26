@@ -26,7 +26,6 @@ function MessageSender() {
 
         setInput("");
         setImageUrl("");
-
     };
 
     return (
@@ -40,11 +39,13 @@ function MessageSender() {
                     className='messageSender__input' 
                     placeholder={`What is on your server ${user.displayName} ?`} />
                     <input 
+                    id="file"
+                    type="file"
                     value={imageUrl}
                     onChange={(e) => setImageUrl(e.target.value)}
                     placeholder="image URL (Optional)" />
                     <button onClick={handleSubmit} type='submit'>
-                        Hidden submit
+                    Upload
                     </button>
                 </form>
              </div>

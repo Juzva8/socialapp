@@ -6,8 +6,8 @@ function Widgets() {
         <div className="widgets">
             <iframe 
             title="Social app" 
-            src="https://cybup.blogspot.com"
-            width="340" 
+            src="https://www.newsbreak.com/"
+            width="360" 
             height="100%" 
             style={{border: "none", overflow: "hidden" }}
             scrolling="no" 
