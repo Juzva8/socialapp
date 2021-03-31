@@ -15,6 +15,7 @@
 .messageSender__top > form {
     flex: 1;
     display: flex;
+
 }
 
 .messageSender__top > form > input{
@@ -29,6 +30,9 @@
 
 .messageSender__top > form > button{
     border-radius: 999px;
+    background-color: #eff2f5;
+    outline: none;
+    border: none;
 }
 
 .messageSender__input{
@@ -38,6 +42,8 @@
 .messageSender__bottom {
     display: flex;
     justify-content: space-evenly;
+
+
 }
 
 .messageSender__option{
@@ -46,22 +52,33 @@
     align-items: center;
     color: gray;
     margin: 5px;
+
 }
 
 .messageSender__option > h3 {
     font-size: medium;
     margin-left: 10px;
     cursor: pointer;
+
+  
 }
 .messageSender__option:hover{
     background-color: #eff2f5;
     border-radius: 20px;
+
 }
 input#file {
-  background-color: #eff2f5;
-  padding: 8px;
-  border-radius: 999px; 
-  display: inline-block;
-  cursor: pointer;
+    display: inline-block;
+    width: 15%;
+    padding: 120px 0 0 0;
+    height: 50px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat #eff2f5;
+    border-radius: 999px;
+    background-size: 60px 60px;
+  
 
 }
